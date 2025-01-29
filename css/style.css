@@ -97,6 +97,15 @@ button:hover {
     background: #218838;
 }
 
+/* Styling untuk disclaimer */
+.disclaimer {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+
 /* Tampilan hasil BMI */
 #result {
     font-weight: bold;
