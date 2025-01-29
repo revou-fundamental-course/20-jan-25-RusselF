@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <div class="container">
+        <!-- Bagian Input -->
+        <div class="input-section">
+            <h2>BMI Calculator</h2>
+            <div class="gender-selection">
+                <div class="gender-option" onclick="selectGender('pria')">
+                    <img src="/images/male.jpg" alt="Laki-laki">
+                    <p>Laki-laki</p>
+                </div>
+                <div class="gender-option" onclick="selectGender('wanita')">
+                    <img src="/images/female.jpg" alt="Perempuan">
+                    <p>Perempuan</p>
+                </div>
+            </div>
+            <label for="age">Usia (tahun):</label>
+            <input type="number" id="age" placeholder="Masukkan usia">
+            <label for="weight">Berat Badan (kg):</label>
+            <input type="number" id="weight" placeholder="Masukkan berat badan">
+            <label for="height">Tinggi Badan (cm):</label>
+            <input type="number" id="height" placeholder="Masukkan tinggi badan">
+            <button onclick="calculateBMI()">Hitung BMI</button>
+        </div>
+
+        <!-- Bagian Hasil -->
+        <div class="result-section" id="result-container">
+            <div id="result">Hasil akan muncul di sini setelah Anda menghitung.</div>
+            <button onclick="resetForm()">Hitung Ulang</button>
+        </div>
+    </div>
     
+    <script src="/js/index.js"></script>
 </body>
 </html>
